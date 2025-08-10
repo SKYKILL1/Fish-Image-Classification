@@ -1,0 +1,53 @@
+/* style.css */
+.header {
+    background: linear-gradient(90deg, #0066cc, #00ccff);
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.result-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.progress-bar {
+    height: 10px;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.confidence-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.bar-container {
+    flex-grow: 1;
+    height: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.bar {
+    height: 100%;
+    background: linear-gradient(90deg, #FF5722, #FF9800);
+    border-radius: 10px;
+}
+
+/* Animation for results */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.result-card, .confidence-row {
+    animation: fadeIn 0.5s ease-in;
+}
